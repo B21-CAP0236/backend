@@ -17,9 +17,9 @@ def parse(request):
                     res = jwt.decode(
                         request_json["jwt_token"],
                         os.environ.get("JWT_SECRET", "-"),
-                        algorithm="HS256",
+                        algorithms=["HS256"],
                     )
-                    
+
                     return str(res)
                 except:
                     return "Error happened"
