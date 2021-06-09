@@ -1,3 +1,7 @@
+<p align="center">
+   <img src="https://user-images.githubusercontent.com/18365721/121313177-55cc5600-c930-11eb-94ca-57506c9f3701.png" alt="Cloud Architecture">
+</p>
+
 # **anANTara** backend system
 
 The backend of anANTara project is using `Google Cloud Function` to create an endpoint that are gonna be doing small tasks and `Hasura GraphQL Engine` that served in `Hasura Cloud` to be used for basically the whole database management system including a graphql endpoint (without needing to write boilerplate code for crud endpoints) with role based permission that are connected with a `PostgreSQL` Database that served in `Google Cloud SQL`.
